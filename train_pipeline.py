@@ -14,8 +14,11 @@ from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 # =========================
 # 1. LOAD DATA
 # =========================
-df = pd.read_csv("B.csv")
+def load_data(path="B.csv"):
+    df = pd.read_csv(path)
+    return df
 
+df = load_data()
 
 # =========================
 # 2. FEATURE ENGINEERING (SAFE)
